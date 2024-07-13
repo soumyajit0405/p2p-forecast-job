@@ -30,15 +30,13 @@ public class JDBCConnection {
 	public static Connection getOracleConnection()
 			throws ClassNotFoundException, SQLException {
 
-		Class.forName("com.mysql.jdbc.Driver");  
+		Class.forName("com.mysql.jdbc.Driver");   
 		  
 		/*Connection con=DriverManager.getConnection(  
 				url,userName,password);    */
 		Connection con=DriverManager.getConnection(  
-				"jdbc:mysql://139.59.30.199:3306/energytrade_015_new?noAccessToProcedureBodies=true","admin","Admin@12345");        
-//		Connection con=DriverManager.getConnection(  
-//				"jdbc:mysql://134.209.154.124:3306/energytrade?noAccessToProcedureBodies=true","root","SIBRPLDEMO@123");
-   
+				"jdbc:mysql://64.227.129.34:3306/energytrade?noAccessToProcedureBodies=true","p2pdbuser","p2p123");  
+//   
 
 		return con;
 
